@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turno de Tarde</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Vehículos por categoría:
+Automóvil y buses categoría A … valor 1500
+Camiones y grúas . Categoría B … valor 2100
+Tractocamiones  categoría C … valor 2700-->
+
+    <!--=======Header=======-->
+    <header>
+        <div class="nav-bar">
+            <a href="#" class="logo"><img src="/img/2.png" alt=""></a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <div class="nav-close-btn"></div>
+                    <a href="/turno-uno.html">Turno Mañana</a>
+                    <a href="/index.html">Salir</a>
+                </div>
+            </div>
+            <div class="nav-menu-btn"></div>
+        </div>
+    </header>
+
+    <section class="section-1">
+        <h1>Bienvenido</h1>
+
+
+        <div class="part-one">
+            <div class="left">
+                <h1>Turno Tarde</h1>
+                <form action="" id="form" class="form">
+                    
+                        <div class="field-ruta">
+                            <label for="sense">Sentido de tránsito:</label>
+                            <select name="sense" id="sense" required>
+                                <option value="0" selected disabled>Seleccione...</option>
+                                <option value="1">Monteria a Sincelejo</option>
+                                <option value="2">Sincelejo a Monteria</option>
+                            </select>
+                        </div>
+                        <div class="field-category">
+                            <label for="category">Categoria</label>
+                            <select name="category" id="category" required>
+                                <option value="0" selected disabled>Seleccione...</option>
+                                <option value="1">Automovil o Buses</option>
+                                <option value="2">Camiones o Gruas</option>
+                                <option value="3">Tractocamiones</option>
+                            </select>
+
+                            
+                        </div>
+
+                        <div class="button-pay">
+                            <input type="submit" class="button" id="buttonSave" value="Cobrar">
+                        </div>
+            </div>
+            <div class="right">
+                <h2>Información</h2>
+                <div>
+                   
+                    <div class="field-reporte">
+                        <label for="reportes">Reporte</label>
+                        <select name="reporte" id="reporte">
+                            <option value="0" selected disabled>Seleccione...</option>
+                            <option value="1">Reporte general</option>
+                            <option value="2">Cantidad de vehículos en cada sentido</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/variables.js" type="module"></script>
+    <script src="js/eventos.js" type="module"></script>
+    <script src="js/funciones.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
